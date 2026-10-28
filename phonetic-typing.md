@@ -15,12 +15,13 @@ This is useful when you:
 
 ## Why Phonetic Typing Matters
 
-Phonetic typing lowers the barrier to entry for scripts like:
-- Arabic / Persian / Urdu
-- Hindi and related scripts
+Phonetic typing is available today for:
+- Arabic (including Arabizi digits such as 3 for ع and 7 for ح)
 - Russian
+- Hindi (with proper vowel signs, so namaste comes out नमस्ते)
 - Greek
-- Other major non-Latin writing systems (depending on support)
+- Hebrew (with final letter forms at the end of a word)
+- Ukrainian
 
 ---
 
@@ -35,7 +36,7 @@ You still decide the words. The tool helps you type them.
 
 ## Availability
 
-Phonetic typing is provided for major languages and may expand over time.
+Phonetic typing covers the six languages above; more may follow.
 
 Try the live tool:
-[https://anykeyboard.io](https://anykeyboard.io/phonetic-keyboard)
+[anykeyboard.io/languages/tools/phonetic-keyboards](https://anykeyboard.io/languages/tools/phonetic-keyboards)

@@ -11,10 +11,10 @@ This roadmap outlines completed, in-progress, and planned improvements.
 - Mobile-friendly responsive UI
 - Language-specific pages with SEO optimization
 - Typing speed test with real-time WPM & accuracy
-- Random sentence typing practice (78 languages)
-- Phonetic typing for Arabic, Russian, Hindi, Greek, and more
+- Typing tests with sentences each keyboard can actually type (116 sentence sets)
+- Phonetic typing for Arabic, Russian, Hindi, Greek, Hebrew and Ukrainian
 - Name transliteration across 30+ scripts
-- Alt-code utility pages (32 languages)
+- Alt-code cheat sheets (29 sheets, every code checked against its code page)
 - Blog with keyboard and language guides
 
 ### April 2026 — Full Product Audit
@@ -26,20 +26,19 @@ This roadmap outlines completed, in-progress, and planned improvements.
 
 ---
 
-## In Progress
-
-- Additional keyboard layouts for underserved languages
-- Expanding phonetic typing coverage to more languages
+### October 2026
+- "How to type it" help on the Tamil and Arabic keyboards
+- On-screen keys no longer open the phone's keyboard
+- Western digits on AltGr for Arabic, Kurdish Sorani and Malay (Jawi)
+- Names in Baybayin, hieroglyphs and Tifinagh; BSL/Auslan/NZSL fingerspelling
 
 ---
 
-## Planned
+## Next
 
-- Browser extension for typing in any text field
-- Offline/PWA support
-- Advanced typing statistics and progress tracking
-- User accounts for saving preferences across devices
-- Custom keyboard layout editor
+- Extend the "How to type it" help to more boards, if the Tamil and Arabic pilot helps
+- Name tools that flag ambiguous spellings and suggest checking with a native reader before a tattoo or engraving
+- Phonetic typing for Tamil, Nepali and Marathi
 
 ---
 

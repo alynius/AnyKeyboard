@@ -19,8 +19,9 @@ without storing your typed text.
 
 ## Client-Side Only
 
-All typing happens locally in your browser.
-Text is never sent to AnyKeyboard servers as “typed content storage.”
+All typing happens locally in your browser. The keyboard only downloads layout
+files; your text leaves the page only if you press the Google or YouTube search
+button.
 
 ---
 
@@ -42,4 +43,4 @@ We strongly discourage typing sensitive information (passwords, credit cards)
 on any third-party website, including this one.
 
 Live app:
-https://anykeyboard.io/privacy.html
+https://anykeyboard.io/privacy-policy

@@ -49,4 +49,4 @@ Ideal for:
 
 Try it instantly:
 https://anykeyboard.io
-https://anykeyboard.io/utils
+https://anykeyboard.io/languages/tools

@@ -7,75 +7,26 @@ A browser-based virtual keyboard and typing practice platform that lets you type
 **Features:**
 - 🌍 100+ keyboard layouts across Latin, Cyrillic, Arabic, CJK, Indic, and more
 - ⚡ Multilingual typing speed test with real-time WPM and accuracy tracking
-- 🔤 Phonetic typing for major languages (type transliterated text on your QWERTY keyboard)
-- 📝 Name transliteration across 30+ scripts
+- 🔤 Phonetic typing for Arabic, Russian, Hindi, Greek, Hebrew and Ukrainian (type Latin letters, get the script)
+- 📝 Your name in 30+ scripts, plus sign-language fingerspelling charts
 - 🔒 Privacy-first — all typing happens locally in your browser
-- ♿ Accessible — WCAG-compliant with keyboard navigation, screen reader support, and reduced-motion respect
+- ♿ Accessible — keyboard navigation, every key named for screen readers, and reduced-motion support
 
 👉 **Live app:** [anykeyboard.io](https://anykeyboard.io)
 
 ---
 
-## Recent: Full Product Audit (April 2026)
+## What's new (October 2026)
 
-A comprehensive deep-dive audit was completed across **5 dimensions**, resulting in 40+ fixes shipped in a single session:
+- **"How to type it" help** on the Tamil and Arabic keyboards: the keys for every Tamil vowel sign (கி, கு, கொ …), the pulli and ஸ்ரீ, and for Arabic short vowels, tanween, shadda and the small alif. The keys are read from each layout, and a browser test types every row.
+- **Phones:** tapping the on-screen keys no longer opens the phone's own keyboard over the board; tap the text box when you want it.
+- **Numbers:** Western digits 0–9 on AltGr for the Arabic, Kurdish Sorani and Malay (Jawi) boards, where the standard layouts put them.
+- **Names in more scripts:** Baybayin with sound-based respelling, a hieroglyph cartouche maker, Tifinagh (and an IRCAM Tifinagh keyboard), Hebrew gematria values, and BSL/Auslan/NZSL fingerspelling with printable strips.
+- **Names by sound, not by letter:** name tools work from pronunciation, backed by a dictionary of about 3,800 common names, so Michael comes out the way it is written in each script rather than letter by letter.
 
-| Dimension | Before | After | Key Improvements |
-|-----------|--------|-------|------------------|
-| **Security** | 7/10 | 9/10 | 0 vulnerabilities, tightened CSP, SRI on analytics, API auth |
-| **Performance** | 4/10 | 7/10 | ~600 KB less per page, browser caching, ISR, font optimization |
-| **Code Quality** | 4/10 | 8/10 | -15K lines removed, consolidated locale variants, modular JS |
-| **UI/UX** | 5/10 | 7/10 | RTL support for 10 languages, theme detection, loading skeletons |
-| **Accessibility** | 3/10 | 7/10 | Skip navigation, ARIA labels, focus management, reduced motion |
+## Earlier: April 2026 product audit
 
-**Overall: 4.9/10 → 8/10**
-
-### What changed
-
-**Performance**
-- Removed forced re-download of 345 KB layout bundle on every navigation
-- Dynamic font loading — each keyboard page only loads fonts for its script (saves 200-400 KB)
-- CSS minification added to build pipeline
-- Cache-Control headers for all static assets
-- Incremental Static Regeneration (ISR) on 7 page types
-- Typing sentences split from 1 monolith (49 KB) into 78 per-language files
-
-**Security**
-- Patched all 6 npm dependency vulnerabilities (0 remaining)
-- Added Subresource Integrity (SRI) hash on third-party analytics
-- Added authentication + rate limiting to IndexNow API endpoint
-- Added `.env` files to `.gitignore`
-- Restored and documented CSP policy requirements
-
-**Code Quality**
-- Consolidated 14 locale-specific hub page variants into 1 parameterized component (-10,000 lines)
-- Consolidated 15 locale-specific footer variants into 1 component (-1,650 lines)
-- Converted 32 copy-paste utility pages into 1 dynamic route (-1,100 lines)
-- Refactored keyboard page to single source of truth (792 → 219 lines)
-- Modularized 2,500-line vanilla JS runtime into 5 focused ES modules
-- Centralized `SITE_URL` from 18+ independent definitions to 1
-- Extracted shared error boundary component
-- Deleted orphaned files and analysis artifacts
-- Added ESLint (next/core-web-vitals) + Prettier
-
-**UI/UX**
-- Defined 9 missing CSS custom properties (light + dark themes)
-- Added 40 RTL CSS overrides for proper Arabic/Hebrew/Urdu/Persian layout mirroring
-- Added OS `prefers-color-scheme` detection (respects system theme preference)
-- Added keyboard loading skeleton and pre-populated layout selector
-- Fixed RTL `dir` attribute detection for 10 RTL languages
-- Added global error boundary for crash protection
-
-**Accessibility**
-- Added skip-to-content link on every page (WCAG 2.4.1)
-- Added `aria-label` to all 50+ virtual keyboard keys including special keys (WCAG 4.1.2)
-- Added global `prefers-reduced-motion` rule disabling all animations (WCAG 2.3.3)
-- Fixed textarea `lang`/`dir` — now dynamic per keyboard instead of hardcoded Arabic
-- Audited 23 `outline: none` instances, fixed 9 missing focus indicators (WCAG 2.4.7)
-- Added mobile menu focus trap with Escape key handler (WCAG 2.4.3)
-- Fixed `role="menu"` misuse and `aria-pressed` → `aria-selected` tab pattern
-- Added `lang` attributes to foreign-language hero text (WCAG 3.1.2)
-- Added `aria-label` to all search inputs and `<main>` landmarks to 17 pages
+A full audit across security, performance, code quality, UI and accessibility took the site from 4.9/10 to 8/10: zero dependency vulnerabilities and a tightened CSP, about 600 KB less per page, a modular keyboard runtime, RTL layouts for 10 languages, and ARIA labels, focus handling and reduced-motion support throughout.
 
 ---
 
